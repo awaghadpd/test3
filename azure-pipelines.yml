@@ -32,14 +32,14 @@ steps:
     targetType: 'inline'
     script: |
      az devops -h
-# Set Default DevOps Organization and Project:-
-#- task: PowerShell@2
-#  displayName: DEVOPS LOGIN + SET DEFAULT DEVOPS ORG & PROJECT
-#  inputs:
-#    targetType: 'inline'
-#    script: |
-#     echo "$(PAT)" | az devops login  
-#     az devops configure --defaults organization=$(DevOpsOrganisation) project=$(DevOpsProjName)
+ Set Default DevOps Organization and Project:-
+- task: PowerShell@2
+  displayName: DEVOPS LOGIN + SET DEFAULT DEVOPS ORG & PROJECT
+  inputs:
+    targetType: 'inline'
+    script: |
+     echo "$(PAT)" | az devops login  
+     az devops configure --defaults organization=$(DevOpsOrganisation) project=$(DevOpsProjName)
 # Create Workitem + Create PR + Associate Workitem with PR + Complete the PR + Delete Source Branch:-
 - task: PowerShell@2
   displayName: CREATE & COMPLETE PULL REQUEST + WORKITEMS
