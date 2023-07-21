@@ -57,7 +57,7 @@ steps:
       Write-Host "#######################################################" 
       Write-Host "WORKITEM ID is: 1"
       Write-Host "#######################################################"
-      $prid = az repos pr create --repository "Bank2Bank Front End" --source-branch main --target-branch dev --work-items 1 --transition-work-items true --query "pullRequestId"
+      $prid = az repos pr create --repository "test3" --source-branch main --target-branch dev --work-items 1 --transition-work-items true --query "pullRequestId"
       Write-Host "#######################################################"
       Write-Host "PULL REQUEST ID is: 1"
       Write-Host "#######################################################"
