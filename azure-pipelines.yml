@@ -38,7 +38,6 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-#     echo "$(PAT)" | az devops login  
       az devops configure --defaults organization=$(DevOpsOrganisation) project=$(DevOpsProjName)
 # Create Workitem + Create PR + Associate Workitem with PR + Complete the PR + Delete Source Branch:-
 - task: PowerShell@2
