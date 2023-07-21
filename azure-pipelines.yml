@@ -11,8 +11,8 @@ variables:
   WorkingDir: $(System.DefaultWorkingDirectory)
   Target: $(build.artifactstagingdirectory)
   DevOpsOrganisation: https://dev.azure.com/walletdoc/
-  DevOpsProjName: Bank2Bank%20Front%20End
-  DevOpsRepoName: Bank2Bank%20Front%20End
+  DevOpsProjName: "Bank2Bank Front End"
+  DevOpsRepoName: test3
 
 
 steps:
