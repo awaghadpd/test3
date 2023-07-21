@@ -26,12 +26,12 @@ steps:
       az extension add --name azure-devops
       az extension show --name azure-devops --output table
 # Validate Az DevOps CLI Extension in the Build Agent:-
-- task: PowerShell@2
-  displayName: VALIDATE AZ DEVOPS CLI
-  inputs:
-    targetType: 'inline'
-    script: |
-     az devops -h
+#- task: PowerShell@2
+#  displayName: VALIDATE AZ DEVOPS CLI
+#  inputs:
+#    targetType: 'inline'
+#    script: |
+#     az devops -h
 # Set Default DevOps Organization and Project:-
 #- task: PowerShell@2
 #  displayName: DEVOPS LOGIN + SET DEFAULT DEVOPS ORG & PROJECT
