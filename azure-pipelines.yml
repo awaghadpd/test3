@@ -46,7 +46,7 @@ steps:
     targetType: 'inline'
     script: |
       $pat = "wperntuz4xdzjbuwdpnc2ykmmc7vpbsao7ml5ln33abijr6iezha"
-      $baseUrl = "https://dev.azure.com/walletdoc/Bank2Bank%20Front%20End/_apis/wit/workItems/$Issue"
+      $baseUrl = "https://dev.azure.com/walletdoc/"
 
       $headers = @{
         "Authorization" = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$pat"))}
