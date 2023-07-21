@@ -37,7 +37,7 @@ steps:
   displayName: DEVOPS LOGIN + SET DEFAULT DEVOPS ORG & PROJECT
   inputs:
     targetType: 'inline'
-    script: |
+    script: 
       az devops configure --defaults organization=$(DevOpsOrganisation) project=$(DevOpsProjName)
 # Create Workitem + Create PR + Associate Workitem with PR + Complete the PR + Delete Source Branch:-
 - task: PowerShell@2
