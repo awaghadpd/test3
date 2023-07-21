@@ -25,7 +25,7 @@ steps:
     inlineScript: |
       az extension add --name azure-devops
       az extension show --name azure-devops --output table
-steps:
+      
 - task: AzureCLI@2
   displayName: 'Azure Login'
   inputs:
